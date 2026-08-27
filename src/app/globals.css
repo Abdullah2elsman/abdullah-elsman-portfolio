@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Warm palette — approved from PORTFOLIO_CONTEXT.md */
+  --color-background: #F8F5EE;
+  --color-on-background: #1F1F1F;
+
+  --color-surface: #F1ECE3;
+  --color-on-surface: #1F1F1F;
+  --color-on-surface-variant: #4A4A4A;
+
+  --color-primary: #D65A31;
+  --color-on-primary: #FFFFFF;
+
+  --color-outline: #D1C7B8;
+  --color-outline-variant: #E4DCCF;
+
+  --color-surface-container-low: #E8E2D6;
+  --color-surface-container: #F1ECE3;
+  --color-surface-container-high: #F8F5EE;
+  --color-surface-container-highest: #E4DCCF;
+
+  --color-secondary: #4A4A4A;
+
+  /* Typography scale */
+  --font-display: "Inter", sans-serif;
+  --font-headline-lg: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Inter", sans-serif;
+  --font-headline-md: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-mono-sm: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --text-display: 48px;
+  --text-display--font-weight: 700;
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.02em;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--font-weight: 600;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.01em;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--font-weight: 600;
+  --text-headline-lg-mobile--line-height: 1.2;
+
+  --text-headline-md: 24px;
+  --text-headline-md--font-weight: 600;
+  --text-headline-md--line-height: 1.3;
+
+  --text-body-lg: 18px;
+  --text-body-lg--font-weight: 400;
+  --text-body-lg--line-height: 1.6;
+
+  --text-body-md: 16px;
+  --text-body-md--font-weight: 400;
+  --text-body-md--line-height: 1.5;
+
+  --text-label-md: 14px;
+  --text-label-md--font-weight: 500;
+  --text-label-md--line-height: 1.4;
+  --text-label-md--letter-spacing: 0.01em;
+
+  --text-mono-sm: 13px;
+  --text-mono-sm--font-weight: 400;
+  --text-mono-sm--line-height: 1.5;
+
+  /* Spacing scale */
+  --spacing-unit: 8px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 20px;
+  --spacing-section-gap: 128px;
+}
+
+:root {
+  --container-max: 1120px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body-md);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus visible ring for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}

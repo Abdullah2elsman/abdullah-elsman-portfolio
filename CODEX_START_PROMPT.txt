@@ -1,0 +1,37 @@
+Read `PORTFOLIO_CONTEXT.md` completely before doing anything else.
+
+Also inspect these design references if they exist in the repository:
+
+- `screen(5).png` — approved desktop homepage
+- `screen(6).png` — mobile responsive reference only
+- `screen(3).png` — Share-k case-study reference
+- `screen(4).png` — Gateway case-study reference
+- `code(5).html`
+- `code(6).html`
+- `code(3).html`
+- `code(4).html`
+- `DESIGN(3).md` through `DESIGN(6).md`
+
+Important:
+- Screenshots define the visual target.
+- `PORTFOLIO_CONTEXT.md` defines factual/content truth.
+- Stitch HTML is reference material, not production code.
+- Some Stitch-generated text is incorrect; do not copy it blindly.
+
+Do NOT implement anything yet.
+
+First:
+1. Inspect the repository and all referenced files.
+2. Identify contradictions between Stitch exports and `PORTFOLIO_CONTEXT.md`.
+3. Propose the exact implementation stack and project structure.
+4. Propose routes and reusable components.
+5. Explain how you will reproduce the responsive desktop/mobile design.
+6. List assets that are missing or temporary.
+7. Break implementation into small reviewable phases.
+8. Highlight any genuinely blocking questions.
+
+Do not redesign the portfolio.
+Do not invent content.
+Do not add unverified metrics.
+
+Wait for approval of the implementation plan before writing application code.

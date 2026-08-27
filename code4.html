@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Abdullah Elsman - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#D65A31",
+                    "on-primary": "#FFFFFF",
+                    "surface": "#F8F5EE",
+                    "on-surface": "#1F1F1F",
+                    "on-surface-variant": "#595959",
+                    "surface-container-lowest": "#F1ECE3",
+                    "surface-container-low": "#F1ECE3",
+                    "surface-container": "#E5DDD1",
+                    "surface-container-high": "#D9D0C3",
+                    "outline-variant": "#D9D0C3",
+                    "outline": "#A69E91",
+                    "surface-dim": "#F1ECE3",
+                    "surface-bright": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1120px",
+                    "gutter": "24px",
+                    "stack-lg": "32px",
+                    "stack-md": "16px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "section-gap": "128px",
+                    "unit": "8px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "mono-sm": ["monospace"],
+                    "headline-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "mono-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Mobile Specific Overrides for structural integrity */
+        @media (max-width: 768px) {
+            .section-padding { padding-top: 64px; padding-bottom: 64px; }
+            .content-width { max-width: 100%; padding-left: 20px; padding-right: 20px; }
+        }
+        
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Grid system for structuralist look */
+        .tech-grid {
+            background-size: 8px 8px;
+            background-image: linear-gradient(to right, #D9D0C3 1px, transparent 1px), linear-gradient(to bottom, #D9D0C3 1px, transparent 1px);
+            opacity: 0.5;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col relative">
+<!-- TopAppBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b border-outline-variant justify-center">
+
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-on-surface focus:outline-none flex items-center justify-center p-2 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<!-- Desktop Navigation (Hidden on mobile) -->
+<div class="hidden md:flex items-center gap-gutter">
+<ul class="flex gap-gutter items-center">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Work</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Experience</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">About</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Skills</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Education</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Contact</a></li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[80px] pb-section-gap flex flex-col gap-[64px] md:gap-section-gap w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="flex flex-col gap-stack-lg items-center text-center w-full">
+<!-- Photo Placeholder -->
+<div class="w-48 h-48 rounded-full border border-outline-variant overflow-hidden bg-surface-container-low flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover grayscale" data-alt="A professional headshot of a software engineer, rendered in a grayscale, high-contrast style. The lighting is studio-quality, emphasizing structural features. The background is a stark, clean white to match a minimalist aesthetic. The subject exudes confidence and technical expertise, wearing simple, dark attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqbdVCSprfzTNRfsfv7JKIGqairQ3Tadv8MHwblXSfvtUmp1ZLLvFtPvXlIFiDuTZrEz4T1NEYTrqEQJ0WFPi39AK0pbYSlpio10dVWYGwo2lKPuVlpL3X-pbdYEPgKNP2gfGfLFghnOtQgdg818ypezunCp2X62AGVvC5bwxEf2rdenXhcY3ec1VVh3hS5e3bXWSoATCoW_lDJrS2LGx9DpLHqezXIYEnBLT7nEbEMS-DG_Af0wFp">
+</div>
+<div class="flex flex-col gap-stack-md w-full max-w-2xl">
+<div class="font-label-md text-label-md font-bold text-on-surface-variant uppercase tracking-widest mb-2">Abdullah Elsman</div><h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display md:text-display text-on-surface tracking-tight">Backend Engineer specializing in robust system architecture.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">Building scalable, high-performance APIs and microservices. Focused on clean code, clear documentation, and structural precision.</p>
+<div class="flex flex-col gap-stack-sm w-full mt-stack-md justify-center">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 w-full text-center hover:bg-opacity-90 transition-opacity" href="#">Download CV</a>
+<a class="border border-outline-variant bg-transparent text-primary font-label-md text-label-md px-6 py-3 w-full text-center hover:bg-surface-container transition-colors" href="#">View Projects</a>
+<a class="border border-outline-variant bg-transparent text-primary font-label-md text-label-md px-6 py-3 w-full text-center hover:bg-surface-container transition-colors flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">mail</span> Contact Me
+                    </a>
+</div>
+</div>
+</section>
+<!-- Proof Strip (Stats) -->
+<section class="w-full border border-outline-variant bg-surface-container-lowest grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-y md:divide-y-0 divide-outline-variant">
+<div class="p-stack-md flex flex-col items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">5+</span>
+<span class="font-mono-sm text-mono-sm text-on-surface-variant uppercase mt-1">Years Exp</span>
+</div>
+<div class="p-stack-md flex flex-col items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">20+</span>
+<span class="font-mono-sm text-mono-sm text-on-surface-variant uppercase mt-1">Projects</span>
+</div>
+<div class="p-stack-md flex flex-col items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">100k+</span>
+<span class="font-mono-sm text-mono-sm text-on-surface-variant uppercase mt-1">Lines of Code</span>
+</div>
+<div class="p-stack-md flex flex-col items-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface">99.9%</span>
+<span class="font-mono-sm text-mono-sm text-on-surface-variant uppercase mt-1">Uptime</span>
+</div>
+</section>
+<!-- Featured Projects (Stacked Vertically) -->
+<section class="flex flex-col gap-stack-lg w-full">
+<div class="border-b border-outline-variant pb-stack-sm mb-stack-md flex justify-between items-end">
+<h2 class="font-headline-md text-headline-md text-on-surface">Featured Work</h2>
+<a class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1 hover:text-primary transition-colors" href="#">
+                    View All <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Project 1: Share-k -->
+<article class="flex flex-col border border-outline-variant bg-surface-container-lowest w-full group overflow-hidden">
+<div class="border-b border-outline-variant bg-surface-container-low overflow-hidden">
+<img alt="Share-k Platform" class="w-full h-auto object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMlHQQnAhVjd9P9SAIv410euRkY6NtuikfqCm6Kn29ngKXUekAyF2Uu5YjNTa1APLKKGadqRPrWEVga6N2t5qb7K-TeuhFz_rwnb9XhLToooaXysF5cvzU9TwzF0E1K4LyFut2CgFzQM5ZzLZ5qRzd7n6cn2VgRJXUAd7doMppQ-5wAqM81MAzQBvt6Zqs8U-wKQ67v9lot3X9PtnyTJv96Xmoe-CWECOozs7jhZsxNQ_BncZEHzBC">
+</div>
+<div class="p-stack-lg flex flex-col gap-stack-md">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md text-on-surface">Share-k Platform</h3>
+<a aria-label="View Source" class="text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        A robust file-sharing microservice designed for high throughput. Implemented custom caching strategies and optimized database queries to handle large concurrent uploads.
+                    </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-stack-md">
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">Node.js</span>
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">PostgreSQL</span>
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">Redis</span>
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">AWS S3</span>
+</div>
+</div>
+</article>
+<!-- Project 2: Gateway -->
+<article class="flex flex-col border border-outline-variant bg-surface-container-lowest w-full group overflow-hidden">
+<div class="border-b border-outline-variant bg-surface-container-low overflow-hidden">
+<img alt="API Gateway" class="w-full h-auto object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjd7x1E08yhyPEeiaIB8n7Gj-hrxHcD-ZKk4iZeQUko6tOwwPj_YIouIk6p11kglryKo-zLs-uJEB-TUXHRz8Dt3oYYvoYPR1vNU7s8zeu9VfRK3uxcL7RPAaK1YnmEtYGL8ingRdP5M3swuXM3gNrSJE3bBahZbop4v0o6QAj5DYiA4II5Y_v9ANOiPhe1Y03HOWXJriCr_I5vHeudMQ20d8Tei5S3pLuyzBmFrOPtHaKw_ul2Yc">
+</div>
+<div class="p-stack-lg flex flex-col gap-stack-md">
+<div class="flex justify-between items-start">
+<h3 class="font-headline-md text-headline-md text-on-surface">API Gateway</h3>
+<a aria-label="View Source" class="text-on-surface-variant hover:text-primary" href="#">
+<span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Centralized routing service managing authentication, rate limiting, and request payload validation across 15+ downstream microservices.
+                    </p>
+<div class="flex flex-wrap gap-2 mt-auto pt-stack-md">
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">Go</span>
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">gRPC</span>
+<span class="bg-surface-container-high text-on-surface font-mono-sm text-mono-sm px-2 py-1 border border-outline-variant">Docker</span>
+</div>
+</div>
+</article>
+<!-- Compact Projects Grid (Mobile: Stacked, Desktop: 2 Col) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg w-full">
+<!-- Smart Book -->
+<article class="flex flex-col border border-outline-variant bg-surface-container-lowest h-full justify-between hover:bg-surface-container transition-colors overflow-hidden">
+<div class="border-b border-outline-variant bg-surface-container-low overflow-hidden">
+<img alt="Smart Book" class="w-full h-auto object-cover aspect-[4/3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZIA1mAK5kzvv8jtrCxO5Myxys4jEJjzh0kt2DfR25dxnNfxCv0Mg92TYGqhkGCQQPJR4fM3-q5OAQZcQR-6O5gABccS1IdYm4ifQlBn9nNcMWV37pBBvxrTQcBIQx0nn2NIXbJM40IQAi7ZBv18LcBGK18hVKco3t0kbBv4igjf2aKTR-I7-dFqbflKydhcyPPy7BSYCcWf0IAFnGKJy93vYApqBQwhnBK0fLGexFmEx86XX_v6e">
+</div>
+<div class="p-stack-md flex flex-col h-full justify-between">
+<div class="flex flex-col gap-stack-sm">
+<div class="flex justify-between items-center border-b border-outline-variant pb-stack-sm">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Smart Book</h4>
+<a class="text-on-surface-variant hover:text-primary" href="#"><span class="material-symbols-outlined text-[16px]">north_east</span></a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">Automated booking system backend with complex scheduling algorithms.</p>
+</div>
+<div class="flex flex-wrap gap-2 mt-stack-md">
+<span class="bg-surface-container text-on-surface font-mono-sm text-mono-sm px-2 py-0.5 text-xs border border-outline-variant">Python</span>
+<span class="bg-surface-container text-on-surface font-mono-sm text-mono-sm px-2 py-0.5 text-xs border border-outline-variant">Django</span>
+</div>
+</div>
+</article>
+<!-- Zoal Online -->
+<article class="flex flex-col border border-outline-variant bg-surface-container-lowest h-full justify-between hover:bg-surface-container transition-colors overflow-hidden">
+<div class="border-b border-outline-variant bg-surface-container-low overflow-hidden">
+<img alt="Zoal Online" class="w-full h-auto object-cover aspect-[4/3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb-YzSRVY-woG1j73xTvIeoT4itTcdYxz3r3MNYfkwaXomX922z4kZKWe-JVhzO6traZvoT19HE0of7Gb0Izd3xGgyC2mDWj0UDFE8-XsLyQzzDFZzwN-I-10QoVlq-4tg7zhbxDurmHqfCEz8HMcZH68Pe7i44nJOKRQxLDYsdTw7jO5Yapgi4cVICMoGXhVkuZ5vPxcLq4iUm_XgsB9W40EG-EqQK1_gNNMcbKXAxF63YJnGvi1r">
+</div>
+<div class="p-stack-md flex flex-col h-full justify-between">
+<div class="flex flex-col gap-stack-sm">
+<div class="flex justify-between items-center border-b border-outline-variant pb-stack-sm">
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Zoal Online</h4>
+<a class="text-on-surface-variant hover:text-primary" href="#"><span class="material-symbols-outlined text-[16px]">north_east</span></a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">E-commerce API handling inventory sync and secure payment gateways.</p>
+</div>
+<div class="flex flex-wrap gap-2 mt-stack-md">
+<span class="bg-surface-container text-on-surface font-mono-sm text-mono-sm px-2 py-0.5 text-xs border border-outline-variant">Laravel</span>
+<span class="bg-surface-container text-on-surface font-mono-sm text-mono-sm px-2 py-0.5 text-xs border border-outline-variant">MySQL</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-md border-t border-outline-variant bg-surface mt-auto">
+<div class="font-label-md text-label-md font-bold text-on-surface">
+            © 2024 Abdullah Elsman. Built with structural precision.
+        </div>
+<ul class="flex gap-gutter items-center">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">GitHub</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">LinkedIn</a></li>
+<li class=""><a class="text-primary underline transition-colors font-body-md text-body-md" href="#">Work</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">About</a></li>
+</ul>
+</footer>
+
+
+</body></html>

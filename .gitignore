@@ -1,0 +1,38 @@
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.*
+
+# Next.js output
+/.next/
+/out/
+
+# Production output
+/build/
+
+# Test and coverage output
+/coverage/
+/playwright-report/
+/test-results/
+
+# Environment files
+.env*
+!.env.example
+
+# Deployment tooling
+/.vercel/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+session-*.md
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS and editor files
+.DS_Store
+*.pem

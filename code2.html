@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Gateway - Case Study</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#F8F5EE",
+                        "surface-container-lowest": "#F8F5EE",
+                        "surface-container-low": "#F1ECE3",
+                        "surface-container-highest": "#E5E0D8",
+                        "primary": "#1F1F1F",
+                        "on-surface": "#1F1F1F",
+                        "on-surface-variant": "#4A4A4A",
+                        "outline": "#D1C9BE",
+                        "outline-variant": "#D1C9BE",
+                        "accent": "#D65A31"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1120px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap": "128px",
+                        "unit": "8px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "mono-sm": ["monospace"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "mono-sm": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F5EE;
+            color: #1F1F1F;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased pt-16">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b border-outline-variant">
+
+<nav class="hidden md:flex justify-center gap-gutter w-2/4">
+<a class="font-label-md text-label-md text-accent font-bold border-b-2 border-accent pb-1" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent transition-colors" href="#">Experience</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent transition-colors" href="#">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent transition-colors" href="#">Education</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-accent transition-colors" href="#">Contact</a>
+</nav>
+<div class="hidden md:flex justify-end w-1/4">
+<a class="font-label-md text-label-md text-accent hover:text-primary transition-colors underline" href="#">Download CV</a>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap">
+<!-- Hero Section -->
+<section class="mb-section-gap">
+<div class="border border-outline-variant rounded-DEFAULT p-stack-lg bg-surface-container-low shadow-sm">
+<h1 class="font-display text-display text-primary mb-stack-md">Gateway: Production Management System</h1>
+<div class="flex flex-wrap gap-stack-sm mb-stack-lg">
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-unit py-1 rounded-sm border border-outline">Freelance / Production Project</span>
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-unit py-1 rounded-sm border border-outline">Backend-focused engineering</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-stack-lg">
+                    A real-world production platform containing approx. 12,000 registered accounts. Designed to streamline complex production workflows with a heavy emphasis on backend stability and data integrity.
+                </p>
+<img alt="Gateway Platform Interface and Architecture" class="w-full h-auto rounded-DEFAULT border border-outline-variant shadow-sm object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjd7x1E08yhyPEeiaIB8n7Gj-hrxHcD-ZKk4iZeQUko6tOwwPj_YIouIk6p11kglryKo-zLs-uJEB-TUXHRz8Dt3oYYvoYPR1vNU7s8zeu9VfRK3uxcL7RPAaK1YnmEtYGL8ingRdP5M3swuXM3gNrSJE3bBahZbop4v0o6QAj5DYiA4II5Y_v9ANOiPhe1Y03HOWXJriCr_I5vHeudMQ20d8Tei5S3pLuyzBmFrOPtHaKw_ul2Yc">
+</div>
+</section>
+<!-- Contributions & Tech Stack Bento -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<!-- Contributions -->
+<div class="md:col-span-8 border border-outline-variant p-stack-lg bg-surface-container-low relative overflow-hidden shadow-sm">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #1F1F1F 0, #1F1F1F 1px, transparent 0, transparent 50%); background-size: 10px 10px;"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md border-b border-outline-variant pb-unit relative z-10">Performance &amp; Infrastructure</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-md relative z-10">
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-unit"><span class="material-symbols-outlined text-[16px] align-middle mr-1 text-accent">database</span>Database Optimization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Restructured relational schemas to eliminate redundancy and improve data consistency across millions of rows.</p>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-unit"><span class="material-symbols-outlined text-[16px] align-middle mr-1 text-accent">speed</span>Query Optimization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Identified and addressed slow-running queries using EXPLAIN analysis, implementing strategic indexing.</p>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-unit"><span class="material-symbols-outlined text-[16px] align-middle mr-1 text-accent">api</span>API Response Structures</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Optimized internal endpoints to reduce latency for high-throughput data fetching operations.</p>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-primary mb-unit"><span class="material-symbols-outlined text-[16px] align-middle mr-1 text-accent">terminal</span>Server Troubleshooting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Troubleshooting Linux server environments and managing deployment pipelines for zero-downtime releases.</p>
+</div>
+</div>
+</div>
+<!-- Context & Metrics -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="border border-outline-variant p-stack-lg bg-surface-container-low flex-1 flex flex-col justify-center items-center text-center shadow-sm hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-4xl mb-unit text-accent">groups</span>
+<h3 class="font-display text-display text-primary">12,000</h3>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Registered Accounts</p>
+</div>
+<div class="border border-outline-variant p-stack-md bg-surface-container-low shadow-sm">
+<h3 class="font-label-md text-label-md text-primary mb-stack-sm border-b border-outline-variant pb-unit">Technical Context</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-2 py-1 rounded-sm border border-outline">Laravel</span>
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-2 py-1 rounded-sm border border-outline">MySQL</span>
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-2 py-1 rounded-sm border border-outline">Linux</span>
+<span class="bg-surface-container-highest font-mono-sm text-mono-sm text-primary px-2 py-1 rounded-sm border border-outline">Server Env</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Blueprint / Architecture Visualization -->
+<section class="mb-section-gap">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">System Architecture Concept</h2>
+<div class="border border-outline-variant bg-surface-container-low p-stack-lg h-96 flex items-center justify-center relative overflow-hidden shadow-sm" style="background-image: linear-gradient(#D1C9BE 1px, transparent 1px), linear-gradient(90deg, #D1C9BE 1px, transparent 1px); background-size: 20px 20px;">
+<div class="text-center bg-surface p-stack-md border border-outline relative z-10 shadow-sm rounded-sm">
+<span class="material-symbols-outlined text-accent text-4xl mb-unit">architecture</span>
+<p class="font-mono-sm text-mono-sm text-on-surface-variant">[ Architecture Diagram Placeholder ]</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-sm max-w-xs">A wireframe representation of the data flow and server infrastructure.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-md bg-surface border-t border-outline-variant">
+<div class="font-body-md text-body-md text-primary">© 2024 Abdullah Elsman. Built with structural precision.</div>
+<div class="flex gap-gutter">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-accent transition-colors focus:outline-none transition-all" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-accent transition-colors focus:outline-none transition-all" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-accent underline hover:text-primary transition-colors focus:outline-none transition-all" href="#">Work</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-accent transition-colors focus:outline-none transition-all" href="#">About</a>
+</div>
+</footer>
+
+
+</body></html>

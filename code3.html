@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Abdullah Elsman - Backend-Focused Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#F8F5EE",
+                        "on-background": "#1F1F1F",
+                        "surface": "#F1ECE3",
+                        "on-surface": "#1F1F1F",
+                        "on-surface-variant": "#4A4A4A",
+                        "primary": "#D65A31",
+                        "on-primary": "#F8F5EE",
+                        "outline": "#D1C7B8",
+                        "outline-variant": "#E4DCCF",
+                        "surface-container-low": "#E8E2D6",
+                        "surface-container": "#F1ECE3",
+                        "surface-container-high": "#F8F5EE",
+                        "surface-container-highest": "#E4DCCF",
+                        "surface-bright": "#F1ECE3",
+                        "secondary": "#4A4A4A"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1120px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap": "128px",
+                        "unit": "8px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "mono-sm": ["monospace"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "mono-sm": ["13px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-16">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-center items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b border-outline-variant">
+<nav class="hidden md:flex gap-4 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#work">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#experience">Experience</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#about">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#skills">Skills</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#education">Education</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-primary hover:bg-primary px-4 py-2 rounded-full transition-all" href="#contact">Contact</a>
+</nav>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-primary absolute right-margin-mobile">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="py-section-gap flex flex-col md:flex-row items-center gap-gutter">
+<div class="flex-1 flex flex-col gap-stack-md">
+<p class="font-mono-sm text-mono-sm text-on-surface-variant uppercase tracking-wider">Backend-Focused Software Engineer</p><h2 class="font-headline-md text-headline-md text-on-surface-variant">Abdullah Elsman</h2>
+<h1 class="font-display text-display text-on-background">Building Robust, Scalable Backend Systems with Laravel &amp; Node.js</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Specializing in building resilient server-side architectures, designing efficient databases, and developing secure APIs for production environments.
+                </p>
+<div class="flex flex-wrap gap-stack-md mt-stack-md items-center">
+<a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity border border-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+    Download CV
+</a>
+<a class="text-on-background font-label-md text-label-md px-6 py-3 rounded border border-outline hover:bg-surface-container-low transition-colors" href="#work">View My Work</a>
+<div class="flex gap-4 ml-auto">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full flex justify-center md:justify-end">
+<div class="w-64 h-64 md:w-80 md:h-80 border border-outline bg-surface p-2 grayscale">
+<img class="w-full h-full object-cover" data-alt="A highly detailed, professional grayscale headshot of a software engineer in a well-lit, minimalist modern office. The lighting is high-key and soft, emphasizing a bright, structuralist tech aesthetic. The subject looks confident, wearing smart casual attire. The background is a slightly blurred, clean architectural space with white and gray tones, embodying a transparently technical vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_syTjE-6u8SNF3pOrleyr_JaD7Seob5mBnKfymSn8sVfKzMKFctm_Nbpl1QIgSgXfmwQ1b3iQ_FYSyAfAnX9Vm6AKoLZLDXfecrZKUGjoIMPR9xf5mZZCM7Aup5U_vIjSjKFKr0nkzOIr5LG6VKhPJKZCMuK0nydas7xzK4HTP6cvIJgN-x_68GK3-ble_MDANLupjsfMCl6hJer1ElH8Da52RoVFuSufbrPzge-y5ncIuf8-yW-w">
+</div>
+</div>
+</section>
+<!-- Proof Strip -->
+<section class="py-stack-lg border-y border-outline-variant bg-surface flex flex-wrap justify-between gap-stack-md text-on-surface-variant font-mono-sm text-mono-sm mb-section-gap">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">school</span>
+                ITI Graduate
+            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                Production Experience
+            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">group</span>
+                12K+ Registered Accounts
+            </div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">code</span>
+                Laravel &amp; Node.js Specialized
+            </div>
+</section>
+<!-- Selected Work -->
+<section class="mb-section-gap" id="work">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-lg">Featured Projects</h2>
+<div class="flex flex-col gap-gutter">
+<!-- Tier 1: Share-k -->
+<div class="border border-outline bg-surface p-gutter flex flex-col md:flex-row gap-gutter rounded">
+<div class="flex-1 border border-outline rounded overflow-hidden">
+<img alt="Share-k Platform" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMlHQQnAhVjd9P9SAIv410euRkY6NtuikfqCm6Kn29ngKXUekAyF2Uu5YjNTa1APLKKGadqRPrWEVga6N2t5qb7K-TeuhFz_rwnb9XhLToooaXysF5cvzU9TwzF0E1K4LyFut2CgFzQM5ZzLZ5qRzd7n6cn2VgRJXUAd7doMppQ-5wAqM81MAzQBvt6Zqs8U-wKQ67v9lot3X9PtnyTJv96Xmoe-CWECOozs7jhZsxNQ_BncZEHzBC">
+</div>
+<div class="flex-1 flex flex-col justify-between py-stack-md">
+<div>
+<p class="font-mono-sm text-mono-sm text-on-surface-variant mb-2">ITI Graduation Project • Backend Developer</p>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Share-k Platform</h3>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant mb-stack-md space-y-1">
+<li class="">Engineered the core backend infrastructure.</li>
+<li class="">Implemented robust authentication and secure payment processing pipelines.</li>
+<li class="">Integrated GitHub API for seamless developer collaboration.</li>
+<li class="">Containerized the application using Docker for consistent deployment.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mb-stack-lg">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Laravel</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Docker</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Payment API</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">GitHub API</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md border border-primary px-4 py-2 hover:bg-surface-container-low transition-colors rounded" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Tier 1: Gateway -->
+<div class="border border-outline bg-surface p-gutter flex flex-col md:flex-row gap-gutter rounded">
+<div class="flex-1 border border-outline rounded overflow-hidden">
+<img alt="Gateway System" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjd7x1E08yhyPEeiaIB8n7Gj-hrxHcD-ZKk4iZeQUko6tOwwPj_YIouIk6p11kglryKo-zLs-uJEB-TUXHRz8Dt3oYYvoYPR1vNU7s8zeu9VfRK3uxcL7RPAaK1YnmEtYGL8ingRdP5M3swuXM3gNrSJE3bBahZbop4v0o6QAj5DYiA4II5Y_v9ANOiPhe1Y03HOWXJriCr_I5vHeudMQ20d8Tei5S3pLuyzBmFrOPtHaKw_ul2Yc">
+</div>
+<div class="flex-1 flex flex-col justify-between py-stack-md">
+<div>
+<p class="font-mono-sm text-mono-sm text-on-surface-variant mb-2">Freelance / Production Project</p>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Gateway System</h3>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant mb-stack-md space-y-1">
+<li class="">Designed and optimized a high-performance database schema to support scaling.</li>
+<li class="">Focused on rigorous database normalization and query optimization.</li>
+<li class="">Successfully managed over 12,000 registered user accounts in a production environment.</li>
+</ul>
+<div class="flex flex-wrap gap-2 mb-stack-lg">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Node.js</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">PostgreSQL</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Performance Tuning</span>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md border border-primary px-4 py-2 hover:bg-surface-container-low transition-colors rounded" href="#">
+                                View Case Study
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Supporting Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-stack-md">
+<div class="border border-outline bg-surface p-stack-md rounded">
+<div class="w-full aspect-video border border-outline rounded overflow-hidden mb-4">
+<img alt="Smart Book" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZZIA1mAK5kzvv8jtrCxO5Myxys4jEJjzh0kt2DfR25dxnNfxCv0Mg92TYGqhkGCQQPJR4fM3-q5OAQZcQR-6O5gABccS1IdYm4ifQlBn9nNcMWV37pBBvxrTQcBIQx0nn2NIXbJM40IQAi7ZBv18LcBGK18hVKco3t0kbBv4igjf2aKTR-I7-dFqbflKydhcyPPy7BSYCcWf0IAFnGKJy93vYApqBQwhnBK0fLGexFmEx86XX_v6e">
+</div>
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Smart Book</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">API development and database management for a modern library system.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-2 py-0.5 text-on-surface-variant rounded">PHP</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-2 py-0.5 text-on-surface-variant rounded">MySQL</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+                            View Source <span class="material-symbols-outlined text-[16px]">code</span>
+</a>
+</div>
+<div class="border border-outline bg-surface p-stack-md rounded">
+<div class="w-full aspect-video border border-outline rounded overflow-hidden mb-4">
+<img alt="Zoal Online" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb-YzSRVY-woG1j73xTvIeoT4itTcdYxz3r3MNYfkwaXomX922z4kZKWe-JVhzO6traZvoT19HE0of7Gb0Izd3xGgyC2mDWj0UDFE8-XsLyQzzDFZzwN-I-10QoVlq-4tg7zhbxDurmHqfCEz8HMcZH68Pe7i44nJOKRQxLDYsdTw7jO5Yapgi4cVICMoGXhVkuZ5vPxcLq4iUm_XgsB9W40EG-EqQK1_gNNMcbKXAxF63YJnGvi1r">
+</div>
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Zoal Online</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">E-commerce backend services facilitating product management and orders.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-2 py-0.5 text-on-surface-variant rounded">Laravel</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-2 py-0.5 text-on-surface-variant rounded">REST API</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-1" href="#">
+                            View Source <span class="material-symbols-outlined text-[16px]">code</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience & About Grid -->
+<section class="mb-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter" id="experience">
+<div class="md:col-span-7 flex flex-col gap-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md border-b border-outline pb-2">Experience</h2>
+<div class="border border-outline bg-surface p-stack-md rounded">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-background">Freelance Software Developer</h3>
+<span class="font-mono-sm text-mono-sm text-on-surface-variant">2024 - Present</span>
+</div>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant space-y-2 mt-4">
+<li class="">Designing and implementing RESTful APIs for diverse client applications.</li>
+<li class="">Architecting relational database structures for optimal data integrity and retrieval speed.</li>
+<li class="">Troubleshooting server-side issues and ensuring high availability of deployed services.</li>
+<li class="">Collaborating directly with clients to translate business requirements into technical specifications.</li>
+</ul>
+</div>
+</div>
+<div id="education">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md border-b border-outline pb-2">Education</h2>
+<div class="space-y-stack-md border border-outline bg-surface p-stack-md rounded">
+<div class="flex flex-col gap-1">
+<h4 class="font-label-md text-label-md font-bold text-on-background">Information Technology Institute (ITI)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Intensive 9-Month Program in Software Engineering</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-outline pt-4">
+<h4 class="font-label-md text-label-md font-bold text-on-background">Sohag University</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">B.Sc. in Information Technology</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col gap-stack-lg" id="about">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md border-b border-outline pb-2">About</h2>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-4 border border-outline bg-surface p-stack-md rounded">
+<p class="">
+                            I am a backend-focused software engineer with a strong foundation in building scalable, secure, and maintainable systems. My technical philosophy centers on the belief that a well-architected backend is the invisible engine driving excellent user experiences.
+                        </p>
+<p class="">
+                            With specialized expertise in Laravel and Node.js ecosystems, I approach system design logically, prioritizing clean code, comprehensive debugging, and deep understanding of infrastructure flow. I thrive in environments where performance bottlenecks need to be solved and complex data structures need to be normalized.
+                        </p>
+</div>
+</div>
+<div id="skills">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md border-b border-outline pb-2">Technical Skills</h2>
+<div class="space-y-4 border border-outline bg-surface p-stack-md rounded">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Backend (Primary)</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Laravel</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">PHP</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Node.js</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Express.js</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">RESTful APIs</span>
+</div>
+</div>
+<div class="border-t border-outline pt-4">
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Databases</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">MySQL</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">PostgreSQL</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Redis</span>
+</div>
+</div>
+<div class="border-t border-outline pt-4">
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Infrastructure &amp; Tools</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Docker</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Git/GitHub</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Linux/CLI</span>
+</div>
+</div>
+<div class="border-t border-outline pt-4">
+<h4 class="font-label-md text-label-md font-bold text-on-background mb-2">Frontend (Secondary)</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">HTML/CSS</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">JavaScript</span>
+<span class="bg-surface-container-low font-mono-sm text-mono-sm px-3 py-1 text-on-surface-variant rounded">Tailwind CSS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="mb-section-gap py-section-gap border border-outline flex flex-col items-center text-center gap-stack-md bg-surface rounded" id="contact">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Let's Build Something Robust.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Open to backend, full-stack, and software engineering opportunities where technical rigor and system architecture are valued.
+            </p>
+<a class="mt-stack-md bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:opacity-90 transition-opacity flex items-center gap-2" href="mailto:contact@abdullahelsman.com">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+                Send an Email
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-md bg-surface border-t border-outline mt-section-gap">
+<div class="font-body-md text-body-md text-on-surface-variant opacity-80">
+            © 2024 Abdullah Elsman. Built with structural precision.
+        </div>
+<nav class="flex gap-stack-md">
+<a class="font-label-md text-label-md font-bold text-primary underline hover:text-primary transition-colors focus:outline-none transition-all" href="#">GitHub</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors focus:outline-none transition-all" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors focus:outline-none transition-all" href="#work">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors focus:outline-none transition-all" href="#about">About</a>
+</nav>
+</footer>
+
+
+</body></html>
