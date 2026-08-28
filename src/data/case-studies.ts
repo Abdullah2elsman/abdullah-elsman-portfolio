@@ -2,6 +2,7 @@ import type {
   DetailedCaseStudy,
   GatewayCaseStudy,
   SmartBookCaseStudy,
+  ZoalCaseStudy,
 } from "./types";
 
 export const shareKStudy: DetailedCaseStudy = {
@@ -384,5 +385,132 @@ export const smartBookStudy: SmartBookCaseStudy = {
     "Coordinating backend implementation with significant Vanilla JavaScript frontend work.",
     "Working within a seven-person university graduation-project team.",
     "Handling broader product responsibilities beyond a single backend endpoint.",
+  ],
+};
+
+export const zoalStudy: ZoalCaseStudy = {
+  slug: "zoal-online",
+  title: "Zoal Online",
+  label: "Client / Production Project",
+  description:
+    "Production Laravel recovery involving PHP compatibility, Composer dependency repair, server troubleshooting, and authorized admin-access restoration.",
+  highlights: [
+    "Production server troubleshooting",
+    "PHP runtime compatibility",
+    "Composer dependency repair",
+    "Application recovery",
+    "Authorized admin-access recovery",
+  ],
+  tags: [
+    "Laravel",
+    "PHP",
+    "Linux / Server",
+    "Composer / Dependencies",
+    "Production Troubleshooting",
+  ],
+  tier: 2,
+  live: "https://zoal.online/",
+  imagePlaceholder: "/images/portfolio/zoal-cover.jpg",
+  role: "Production Recovery / Server Troubleshooting",
+  productConcept:
+    "An existing Laravel production application that required direct server troubleshooting to resolve runtime compatibility, damaged dependencies, and administrative access needs.",
+  contributions: [
+    "Worked directly on the production server through the terminal",
+    "Diagnosed a PHP runtime older than the application required",
+    "Identified an incomplete or broken vendor/dependency state",
+    "Removed the unusable vendor installation",
+    "Reinstalled the required Composer dependencies",
+    "Handled server and application compatibility issues",
+    "Created an authorized replacement admin account from the terminal",
+    "Restored the application to a working state",
+  ],
+  technicalStack: [
+    { category: "Application", items: ["PHP", "Laravel"] },
+    { category: "Environment", items: ["Linux / Production Server"] },
+    { category: "Dependency Management", items: ["Composer"] },
+  ],
+  context: [
+    "Zoal Online was an existing Laravel production application. Abdullah was brought in to resolve operational and server problems, not to build the product or its business functionality.",
+    "The work took place directly in the production environment and focused on determining why the application could not run correctly, restoring a valid runtime and dependency state, and recovering authorized administrative access.",
+  ],
+  boundaries: [
+    "No full-application or architecture ownership",
+    "No frontend, payment, or e-commerce implementation claim",
+    "No hosting architecture, CI/CD, or monitoring ownership",
+  ],
+  problems: [
+    {
+      title: "Runtime Compatibility",
+      description:
+        "The production server was running a PHP version older than the Laravel application required.",
+    },
+    {
+      title: "Dependency State",
+      description:
+        "The application's vendor and dependency files were incomplete or damaged, preventing a valid application runtime state.",
+    },
+    {
+      title: "Administrative Access",
+      description:
+        "The existing administrator could not access the system and needed authorized administrative access recovery.",
+    },
+  ],
+  diagnosticSteps: [
+    "Application requirements: inspect the Laravel application's compatibility needs.",
+    "Runtime environment: compare the production PHP runtime with those requirements.",
+    "Dependency state: inspect whether the Composer dependencies form a complete, usable vendor environment.",
+    "Application behavior: verify the application's startup and runtime state after environment and dependency repair.",
+    "Administrative access: restore authorized access once the application is operational.",
+  ],
+  recoveryAreas: [
+    {
+      title: "PHP Compatibility",
+      description:
+        "Handled the mismatch between the older server PHP runtime and the application's requirements without claiming an unverified version number or hosting setup.",
+    },
+    {
+      title: "Dependency Repair",
+      description:
+        "Removed the unusable vendor directory and reinstalled the required Composer dependencies to restore a complete application dependency environment.",
+    },
+    {
+      title: "Application Recovery",
+      description:
+        "Verified the Laravel application after the runtime and dependency issues were addressed, returning it to a working state.",
+    },
+  ],
+  recoverySequence: [
+    "Identified the runtime compatibility and dependency-state problems.",
+    "Removed the broken vendor installation as one step in a wider dependency recovery.",
+    "Reinstalled the required dependencies through Composer.",
+    "Confirmed that the application could return to normal operation.",
+  ],
+  adminRecovery: [
+    "The existing administrator could not access the system.",
+    "As authorized recovery work, Abdullah created a new admin account from the terminal so administration could resume.",
+    "This was account restoration for the client, not an authentication bypass, password attack, or security incident response claim.",
+  ],
+  outcome: [
+    "The production Laravel application returned to a working state.",
+    "The required application dependencies were restored.",
+    "The runtime and application compatibility issues were resolved.",
+    "Authorized administrative access was restored through a replacement admin account.",
+    "The client confirmed satisfaction with the recovery result.",
+  ],
+  demonstrates: [
+    "Debugging an existing Laravel application in a production environment",
+    "Recognizing PHP runtime and framework compatibility boundaries",
+    "Repairing an incomplete or damaged Composer dependency environment",
+    "Working carefully through a production server terminal",
+    "Separating environment failures from unnecessary business-logic changes",
+    "Handling a real client recovery request with a narrow, operational scope",
+  ],
+  learnings: [
+    "Diagnosing production failures systematically before changing application code.",
+    "Understanding the relationship between Laravel requirements and the server PHP runtime.",
+    "Recovering a broken Composer dependency environment as part of a wider application repair.",
+    "Working directly and carefully with a production server.",
+    "Resolving operational problems without unnecessary changes to existing business logic.",
+    "Handling client-critical recovery and administrative-access needs with clear scope boundaries.",
   ],
 };

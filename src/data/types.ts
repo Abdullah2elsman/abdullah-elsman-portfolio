@@ -62,6 +62,19 @@ export interface SmartBookCaseStudy extends CaseStudy {
   learnings: string[];
 }
 
+export interface ZoalCaseStudy extends CaseStudy {
+  context: string[];
+  boundaries: string[];
+  problems: CaseStudyDetail[];
+  diagnosticSteps: string[];
+  recoveryAreas: CaseStudyDetail[];
+  recoverySequence: string[];
+  adminRecovery: string[];
+  outcome: string[];
+  demonstrates: string[];
+  learnings: string[];
+}
+
 export interface ExperienceEntry {
   title: string;
   period: string;
