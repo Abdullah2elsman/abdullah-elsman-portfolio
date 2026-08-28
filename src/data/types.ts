@@ -19,6 +19,19 @@ export interface CaseStudy extends Project {
   technicalStack: { category: string; items: string[] }[];
 }
 
+export interface CaseStudyDetail {
+  title: string;
+  description: string;
+}
+
+export interface DetailedCaseStudy extends CaseStudy {
+  overview: string[];
+  contributionDetails: CaseStudyDetail[];
+  challenges: CaseStudyDetail[];
+  outcome: string[];
+  learnings: string[];
+}
+
 export interface ExperienceEntry {
   title: string;
   period: string;
