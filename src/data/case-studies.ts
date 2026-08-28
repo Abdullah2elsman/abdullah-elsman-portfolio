@@ -1,4 +1,4 @@
-import type { CaseStudy, DetailedCaseStudy } from "./types";
+import type { DetailedCaseStudy, GatewayCaseStudy } from "./types";
 
 export const shareKStudy: DetailedCaseStudy = {
   slug: "share-k",
@@ -111,7 +111,7 @@ export const shareKStudy: DetailedCaseStudy = {
   ],
 };
 
-export const gatewayStudy: CaseStudy = {
+export const gatewayStudy: GatewayCaseStudy = {
   slug: "gateway",
   title: "Gateway",
   label: "Freelance / Production Project",
@@ -129,24 +129,103 @@ export const gatewayStudy: CaseStudy = {
   live: "https://gatewaysystem.net/login",
   github: "https://github.com/Abdullah2elsman/Gateway",
   imagePlaceholder: "/images/portfolio/gateway-cover.jpg",
-  role: "Independent Freelance Developer",
+  role: "Software Developer / Backend-focused Full Stack",
   productConcept:
     "A production English-learning platform containing approximately 12,000 registered accounts. Abdullah worked independently on backend performance, database normalization, API improvements, deployment, and server troubleshooting.",
   contributions: [
-    "Improved backend data retrieval and response shapes.",
-    "Added pagination to data-heavy endpoints.",
-    "Fixed application bugs and addressed errors.",
-    "Built two new pages/features across backend and frontend.",
-    "Normalized poorly structured parts of the database.",
-    "Improved dashboard/admin data flow.",
-    "Addressed server-load and query/API issues.",
-    "Handled server work and deployment directly.",
-    "Troubleshot production and server problems.",
+    "Improved backend data retrieval and response shapes",
+    "Added pagination where result sets needed more manageable handling",
+    "Fixed application bugs and addressed errors",
+    "Built two pages/features across backend and frontend",
+    "Normalized poorly structured parts of the database",
+    "Improved dashboard and admin data flow",
+    "Addressed server-load, query, and API issues",
+    "Handled production server and deployment troubleshooting directly",
   ],
   technicalStack: [
-    { category: "Backend", items: ["Laravel", "PHP"] },
-    { category: "Frontend", items: ["React"] },
+    { category: "Backend", items: ["PHP", "Laravel"] },
     { category: "Database", items: ["MySQL"] },
-    { category: "Infrastructure", items: ["Linux / Server"] },
+    { category: "Frontend", items: ["React"] },
+    { category: "Environment", items: ["Linux / Server"] },
+  ],
+  context: [
+    "Gateway is an existing production English-learning platform. Abdullah's work focused on improving, maintaining, and extending selected parts of the application rather than building the full product from scratch.",
+    "The engagement required understanding the existing Laravel application, MySQL structure, API and dashboard flows, React frontend, and production server environment before making changes.",
+  ],
+  nonContributions: [
+    "Payments",
+    "Subscriptions",
+    "Roles / permissions",
+    "Notifications",
+  ],
+  primaryFocus: [
+    "Laravel backend and application maintenance",
+    "MySQL database structure and normalization",
+    "APIs and backend-to-frontend data flow",
+    "Production debugging and application fixes",
+    "Server and deployment troubleshooting",
+  ],
+  secondaryFocus:
+    "React frontend work was completed where required to deliver functionality, including two pages/features. The backend remained the primary engineering focus.",
+  engineeringContext: [
+    {
+      title: "Database Structure",
+      description:
+        "Some existing database areas were poorly structured and needed normalization work.",
+    },
+    {
+      title: "Data Retrieval",
+      description:
+        "Parts of the backend data retrieval needed improvement, including pagination where result sets were difficult to manage.",
+    },
+    {
+      title: "API & Dashboard Flow",
+      description:
+        "Backend response shapes and admin/dashboard data flow needed coordinated backend and frontend work.",
+    },
+    {
+      title: "Production Environment",
+      description:
+        "Application behavior, server load, queries, and API issues required investigation in the production environment.",
+    },
+  ],
+  backendAndData: [
+    "Improved backend data retrieval behavior in the areas worked on.",
+    "Introduced pagination where result sets needed more manageable handling.",
+    "Improved backend responses consumed by the frontend and reduced unnecessary data handling where applicable.",
+    "Fixed application bugs and addressed errors in relevant parts of the system.",
+  ],
+  databaseNormalization: [
+    "Normalized poorly structured parts of the existing MySQL database.",
+    "Worked toward clearer data relationships and reduced unnecessary duplication where relevant.",
+    "Made the affected database areas easier to understand and maintain from the application layer.",
+  ],
+  apiAndDashboard: [
+    "Reshaped backend API responses and improved the data returned to the frontend.",
+    "Improved admin and dashboard data flows across backend and frontend boundaries.",
+    "Used React where required to complete the frontend side of delivered functionality, while keeping the work backend-focused.",
+  ],
+  productionTroubleshooting: [
+    "Worked directly with the production environment and handled server troubleshooting personally.",
+    "Investigated issues involving application behavior, server load, queries, and API behavior across system layers.",
+    "Handled deployment-related troubleshooting directly without claiming ownership of a broader CI/CD or infrastructure architecture.",
+  ],
+  deliveredFeatures:
+    "Implemented two application pages/features end-to-end, covering the required backend logic and data flow together with frontend integration. Their names and business purpose are intentionally not stated because those details are not verified in the current source of truth.",
+  impact: [
+    "Cleaner structure in the database areas that were normalized",
+    "More manageable data retrieval through pagination",
+    "Clearer API and frontend data flow in the areas worked on",
+    "Resolved application and server issues",
+    "Improved maintainability across the affected backend, database, and dashboard areas",
+  ],
+  scaleContext:
+    "The production platform contained approximately 12,000 registered accounts. This is not an active-user, concurrency, traffic, or load-testing metric.",
+  learnings: [
+    "Understanding an unfamiliar production codebase before changing it.",
+    "Tracing problems across application, API, database, and server boundaries.",
+    "Improving an existing database structure rather than designing one from scratch.",
+    "Balancing backend and frontend changes when delivering complete functionality.",
+    "Handling real production, server, and deployment troubleshooting directly.",
   ],
 };

@@ -1,17 +1,27 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GatewayCaseStudy } from "@/components/projects/GatewayCaseStudy";
 
-export default function GatewayCaseStudy() {
+export const metadata: Metadata = {
+  title: "Gateway Case Study — Abdullah Elsman",
+  description:
+    "A production engineering case study covering Laravel backend work, MySQL normalization, API and dashboard data flow, and direct server troubleshooting on Gateway.",
+  alternates: {
+    canonical: "/projects/gateway",
+  },
+  openGraph: {
+    title: "Gateway Case Study — Abdullah Elsman",
+    description:
+      "Independent production engineering work across Laravel, MySQL, APIs, application fixes, and server troubleshooting.",
+  },
+};
+
+export default function GatewayCaseStudyPage() {
   return (
     <>
       <Header />
-      <main className="flex-grow pt-16 flex flex-col gap-[var(--spacing-section-gap)]">
-        <section className="py-[var(--spacing-section-gap)] text-center px-[var(--spacing-margin-mobile)]">
-          <h1 className="font-display text-display text-on-background">
-            Gateway Case Study — Phase 5
-          </h1>
-        </section>
-      </main>
+      <GatewayCaseStudy />
       <Footer />
     </>
   );

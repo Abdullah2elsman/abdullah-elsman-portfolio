@@ -32,6 +32,22 @@ export interface DetailedCaseStudy extends CaseStudy {
   learnings: string[];
 }
 
+export interface GatewayCaseStudy extends CaseStudy {
+  context: string[];
+  nonContributions: string[];
+  primaryFocus: string[];
+  secondaryFocus: string;
+  engineeringContext: CaseStudyDetail[];
+  backendAndData: string[];
+  databaseNormalization: string[];
+  apiAndDashboard: string[];
+  productionTroubleshooting: string[];
+  deliveredFeatures: string;
+  impact: string[];
+  scaleContext: string;
+  learnings: string[];
+}
+
 export interface ExperienceEntry {
   title: string;
   period: string;
