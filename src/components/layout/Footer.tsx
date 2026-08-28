@@ -9,7 +9,10 @@ export function Footer() {
       <div className="font-body-md text-body-md text-on-surface-variant opacity-80">
         &copy; {year} {personal.name}
       </div>
-      <nav className="flex gap-[var(--spacing-stack-md)]" aria-label="Footer navigation">
+      <nav
+        className="flex flex-wrap justify-center gap-[var(--spacing-stack-md)]"
+        aria-label="Footer navigation"
+      >
         <Link
           href={personal.github}
           target="_blank"

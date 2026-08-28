@@ -32,7 +32,7 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "AI Integration",
-    items: ["AI Integrations"],
+    title: "AI Integrations",
+    items: ["Backend-to-AI service integration", "AI APIs", "RAG exposure"],
   },
 ];

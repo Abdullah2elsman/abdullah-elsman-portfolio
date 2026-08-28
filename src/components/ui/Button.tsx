@@ -8,6 +8,7 @@ interface ButtonProps {
   variant?: ButtonVariant;
   size?: ButtonSize;
   href?: string;
+  download?: boolean | string;
   className?: string;
   type?: "button" | "submit";
 }
@@ -32,6 +33,7 @@ export function Button({
   variant = "primary",
   size = "md",
   href,
+  download,
   className = "",
   type = "button",
 }: ButtonProps) {
@@ -41,7 +43,7 @@ export function Button({
 
   if (href) {
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} download={download} className={classes}>
         {children}
       </Link>
     );

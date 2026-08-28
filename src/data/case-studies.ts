@@ -3,7 +3,7 @@ import type { CaseStudy } from "./types";
 export const shareKStudy: CaseStudy = {
   slug: "share-k",
   title: "Share-k",
-  label: "ITI Graduation Project · Backend Developer",
+  label: "ITI Graduation Project • Backend Developer",
   description:
     "Developer collaboration platform connecting GitHub projects with contributors using AI-assisted skill evaluation.",
   highlights: [

@@ -6,11 +6,11 @@ export const experience: ExperienceEntry[] = [
     period: "2024 — Present",
     themes: [
       "Laravel production applications",
-      "APIs and database design",
-      "Backend performance optimization",
-      "Deployment and server management",
-      "Production troubleshooting and maintenance",
-      "Client work and direct collaboration",
+      "REST APIs and backend performance improvements",
+      "Database work and normalization",
+      "Server and deployment troubleshooting",
+      "Application maintenance",
+      "Direct client work",
     ],
   },
 ];

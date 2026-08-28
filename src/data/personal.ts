@@ -2,6 +2,7 @@ import type { Highlight } from "./types";
 
 export const personal = {
   name: "Abdullah Elsman",
+  portrait: "/images/portfolio/portrait.jpg",
   eyebrow: "BACKEND-FOCUSED SOFTWARE ENGINEER",
   headline:
     "Building Robust, Scalable Backend Systems with Laravel & Node.js",
@@ -13,16 +14,17 @@ export const personal = {
   ],
   contactCTAHeading: "Let's Build Something Robust.",
   contactCTADescription:
-    "Open to backend and full-stack opportunities involving maintainable APIs, databases, integrations, and production problem solving.",
+    "Open to Backend Engineer and Software Engineer roles, full-stack opportunities where backend work is important, and selected freelance or client projects.",
+  contactEmail: null as string | null,
   github: "https://github.com/Abdullah2elsman",
   linkedin: "https://www.linkedin.com/in/abdullah-elsman/",
 } as const;
 
 export const highlights: Highlight[] = [
-  { icon: "school", text: "ITI Graduate" },
-  { icon: "verified", text: "Production Experience" },
-  { icon: "group", text: "Freelance & Client Work" },
-  { icon: "code", text: "Laravel / PHP" },
+  { icon: "education", text: "ITI Graduate" },
+  { icon: "production", text: "Production Experience" },
+  { icon: "backend", text: "Laravel / PHP" },
+  { icon: "accounts", text: "~12K Registered Accounts" },
 ];
 
 export const navLinks = [

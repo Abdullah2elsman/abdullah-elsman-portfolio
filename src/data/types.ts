@@ -33,10 +33,11 @@ export interface SkillCategory {
 export interface EducationEntry {
   institution: string;
   degree: string;
-  note?: string;
+  status?: "Completed";
+  graduationProject: string;
 }
 
 export interface Highlight {
-  icon: string;
+  icon: "education" | "production" | "backend" | "accounts";
   text: string;
 }
