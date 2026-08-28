@@ -48,6 +48,20 @@ export interface GatewayCaseStudy extends CaseStudy {
   learnings: string[];
 }
 
+export interface SmartBookCaseStudy extends CaseStudy {
+  university: string;
+  overview: string[];
+  primaryFocus: string[];
+  frontendFocus: string;
+  featureDetails: CaseStudyDetail[];
+  pdfProcessing: string[];
+  quizTypes: CaseStudyDetail[];
+  aiBoundary: string;
+  challenges: CaseStudyDetail[];
+  outcome: string[];
+  learnings: string[];
+}
+
 export interface ExperienceEntry {
   title: string;
   period: string;

@@ -1,4 +1,8 @@
-import type { DetailedCaseStudy, GatewayCaseStudy } from "./types";
+import type {
+  DetailedCaseStudy,
+  GatewayCaseStudy,
+  SmartBookCaseStudy,
+} from "./types";
 
 export const shareKStudy: DetailedCaseStudy = {
   slug: "share-k",
@@ -227,5 +231,158 @@ export const gatewayStudy: GatewayCaseStudy = {
     "Improving an existing database structure rather than designing one from scratch.",
     "Balancing backend and frontend changes when delivering complete functionality.",
     "Handling real production, server, and deployment troubleshooting directly.",
+  ],
+};
+
+export const smartBookStudy: SmartBookCaseStudy = {
+  slug: "smart-book",
+  title: "Smart Book",
+  label: "University Graduation Project",
+  description:
+    "Educational platform for course and PDF-based learning with manual, subject, and AI-assisted quiz workflows.",
+  highlights: [
+    "Authentication",
+    "Courses and subjects",
+    "PDF learning workflow",
+    "Manual and AI-generated quizzes",
+    "Backend integration with the AI service",
+    "Significant frontend functionality",
+  ],
+  tags: ["Laravel", "JavaScript", "MySQL", "AI Integration", "PDF Processing"],
+  tier: 2,
+  github: "https://github.com/Abdullah2elsman/Graduation-Project",
+  imagePlaceholder: "/images/portfolio/smart-book-cover.jpg",
+  team: "7",
+  role: "Backend Developer with significant frontend contributions",
+  university: "Sohag University",
+  productConcept:
+    "A university graduation project where students access courses, subjects, learning PDFs, and quizzes. AI-assisted functionality extends the learning workflow through a separate service connected to the Laravel backend.",
+  contributions: [
+    "Authentication",
+    "Courses",
+    "Subjects",
+    "Users",
+    "PDFs",
+    "Subject quizzes",
+    "Manual quizzes",
+    "AI-generated quizzes",
+    "Backend integration with the AI service",
+    "Significant frontend functionality",
+  ],
+  technicalStack: [
+    { category: "Backend", items: ["PHP", "Laravel"] },
+    { category: "Database", items: ["MySQL"] },
+    { category: "Frontend", items: ["Vanilla JavaScript", "HTML", "CSS"] },
+    { category: "AI Integration", items: ["Backend-to-AI service integration"] },
+  ],
+  overview: [
+    "Smart Book is an educational platform built for students to move through courses and subjects, access PDF learning materials, and work with quizzes inside one application workflow.",
+    "Alongside normal course and quiz functionality, an external AI service augments selected learning flows. The Laravel application prepares PDF-derived content for that integration and receives generated learning output, including AI-assisted quizzes.",
+  ],
+  primaryFocus: [
+    "Laravel backend functionality",
+    "Authentication and user-related application flows",
+    "Course, subject, and PDF functionality",
+    "Manual, subject, and AI-generated quiz workflows",
+    "Backend-side integration with the external AI service",
+  ],
+  frontendFocus:
+    "Abdullah also implemented significant frontend functionality with Vanilla JavaScript, HTML, and CSS where complete features required work across the application boundary. This was supporting full-stack delivery, not sole frontend ownership or a frontend-specialist role.",
+  featureDetails: [
+    {
+      title: "Authentication",
+      description:
+        "Worked on the application's authentication functionality without claiming unverified protocol or authorization details.",
+    },
+    {
+      title: "Course & Subject Management",
+      description:
+        "Implemented functionality around the course and subject structure that organizes the platform's educational material.",
+    },
+    {
+      title: "User Management",
+      description:
+        "Worked on user-related functionality required by the educational application and its learning workflows.",
+    },
+    {
+      title: "PDF Learning Workflow",
+      description:
+        "Handled PDF functionality as a core part of the learning experience and as an input to the AI-assisted workflow.",
+    },
+    {
+      title: "Quiz System",
+      description:
+        "Worked on subject quizzes, manual quiz creation, and AI-generated quizzes as distinct but connected application paths.",
+    },
+    {
+      title: "AI Service Integration",
+      description:
+        "Implemented the Laravel/backend-side integration with the external AI service. Abdullah did not implement or train the AI model or service itself.",
+    },
+    {
+      title: "Frontend Functionality",
+      description:
+        "Delivered significant Vanilla JavaScript, HTML, and CSS functionality needed to connect student and instructor-facing flows to the backend.",
+    },
+  ],
+  pdfProcessing: [
+    "Stored and served learning PDFs as part of course and subject workflows.",
+    "Handled PDF pages and extracted PDF-derived text within the Laravel application.",
+    "Prepared PDF-derived text and image content for the remembered AI-assisted integration workflow.",
+    "Kept normal PDF access and application behavior separate from the external AI-processing boundary.",
+  ],
+  quizTypes: [
+    {
+      title: "Manual Quizzes",
+      description:
+        "Normal application quiz functionality allowed quizzes to be created without depending on AI processing.",
+    },
+    {
+      title: "Subject Quizzes",
+      description:
+        "Quiz functionality connected assessment activity to the relevant subject and learning context.",
+    },
+    {
+      title: "AI-Generated Quizzes",
+      description:
+        "The AI-assisted path used learning material sent through the backend integration to support generated quiz content.",
+    },
+  ],
+  aiBoundary:
+    "Abdullah's responsibility was the Laravel/backend integration boundary: preparing application data for the external AI service and connecting returned output to Smart Book workflows. The AI service and model were separate and are not presented as his implementation.",
+  challenges: [
+    {
+      title: "Connecting Application Logic to an AI Service",
+      description:
+        "The Laravel application needed a clear boundary between normal product responsibilities and external AI processing.",
+    },
+    {
+      title: "Handling Educational Material",
+      description:
+        "PDF-based learning content had to move through storage, access, page/content handling, and AI-assisted application flows.",
+    },
+    {
+      title: "Supporting Manual and AI-Assisted Quizzes",
+      description:
+        "Normal subject and manually created quizzes needed to coexist with the AI-generated quiz path rather than being replaced by it.",
+    },
+    {
+      title: "Coordinating Backend and Frontend Work",
+      description:
+        "Complete learning features required Laravel implementation together with significant Vanilla JavaScript frontend work in a seven-person project.",
+    },
+  ],
+  outcome: [
+    "Delivered as a Sohag University graduation project by a team of seven.",
+    "Combined a traditional educational application workflow with restrained AI-assisted learning functionality.",
+    "Demonstrated course, subject, PDF, user, and quiz functionality across backend and frontend layers.",
+  ],
+  learnings: [
+    "Integrating a Laravel application with an external AI service while keeping ownership boundaries clear.",
+    "Designing application flows around PDF-based learning content.",
+    "Supporting manual, subject, and AI-generated quiz functionality within one product.",
+    "Coordinating backend implementation with significant Vanilla JavaScript frontend work.",
+    "Working within a seven-person university graduation-project team.",
+    "Handling broader product responsibilities beyond a single backend endpoint.",
   ],
 };
