@@ -11,9 +11,16 @@ export const metadata: Metadata = {
     canonical: "/projects/smart-book",
   },
   openGraph: {
+    type: "article",
     title: "Smart Book Case Study — Abdullah Elsman",
     description:
       "Backend and frontend engineering for a PDF-based educational platform with manual and AI-assisted quiz workflows.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Smart Book Case Study — Abdullah Elsman",
+    description:
+      "Laravel and frontend engineering for a PDF-based educational platform with manual and AI-assisted quiz workflows.",
   },
 };
 

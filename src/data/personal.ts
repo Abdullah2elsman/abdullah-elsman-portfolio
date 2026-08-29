@@ -15,6 +15,7 @@ export const personal = {
   contactCTAHeading: "Let's Build Something Robust.",
   contactCTADescription:
     "Open to Backend Engineer and Software Engineer roles, full-stack opportunities where backend work is important, and selected freelance or client projects.",
+  // Set this only after the final address is confirmed. Null prevents a fake mailto link.
   contactEmail: null as string | null,
   github: "https://github.com/Abdullah2elsman",
   linkedin: "https://www.linkedin.com/in/abdullah-elsman/",

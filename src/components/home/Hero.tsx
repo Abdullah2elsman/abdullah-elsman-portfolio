@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
@@ -8,8 +10,13 @@ import {
   LinkedInIcon,
 } from "@/components/icons/Icons";
 import { personal } from "@/data/personal";
+import { siteConfig } from "@/data/site";
 
 export function Hero() {
+  const cvAvailable = existsSync(
+    join(process.cwd(), "public", siteConfig.cvPath.replace(/^\//, "")),
+  );
+
   return (
     <section className="py-[var(--spacing-section-gap)]" aria-labelledby="hero-heading">
       <Container>
@@ -32,14 +39,27 @@ export function Hero() {
             </p>
 
             <div className="mt-[var(--spacing-stack-md)] flex flex-wrap items-center gap-[var(--spacing-stack-md)]">
-              <Button
-                href="/documents/abdullah-elsman-cv.pdf"
-                download
-                className="whitespace-nowrap"
-              >
-                <DownloadIcon className="size-[18px]" />
-                Download CV
-              </Button>
+              {cvAvailable ? (
+                <Button href={siteConfig.cvPath} download className="whitespace-nowrap">
+                  <DownloadIcon className="size-[18px]" />
+                  Download CV
+                </Button>
+              ) : (
+                <button
+                  type="button"
+                  disabled
+                  aria-describedby="cv-status"
+                  className="inline-flex cursor-not-allowed items-center gap-2 whitespace-nowrap rounded border border-primary bg-primary px-6 py-3 font-label-md text-label-md text-on-primary opacity-65"
+                >
+                  <DownloadIcon className="size-[18px]" />
+                  Download CV
+                </button>
+              )}
+              {!cvAvailable && (
+                <span id="cv-status" className="sr-only">
+                  The final CV document has not been added yet.
+                </span>
+              )}
               <Button href="/#work" variant="secondary" className="whitespace-nowrap">
                 View My Work
               </Button>

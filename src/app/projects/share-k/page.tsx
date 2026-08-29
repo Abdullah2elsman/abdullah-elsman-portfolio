@@ -11,9 +11,16 @@ export const metadata: Metadata = {
     canonical: "/projects/share-k",
   },
   openGraph: {
+    type: "article",
     title: "Share-k Case Study — Abdullah Elsman",
     description:
       "Backend engineering contributions and project-level architecture for the Share-k developer collaboration platform.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Share-k Case Study — Abdullah Elsman",
+    description:
+      "Backend engineering contributions to the Share-k developer collaboration platform.",
   },
 };
 

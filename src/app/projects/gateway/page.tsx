@@ -11,9 +11,16 @@ export const metadata: Metadata = {
     canonical: "/projects/gateway",
   },
   openGraph: {
+    type: "article",
     title: "Gateway Case Study — Abdullah Elsman",
     description:
       "Independent production engineering work across Laravel, MySQL, APIs, application fixes, and server troubleshooting.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Gateway Case Study — Abdullah Elsman",
+    description:
+      "Production engineering work across Laravel, MySQL, APIs, application fixes, and server troubleshooting.",
   },
 };
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
-import { ArrowRightIcon, ExternalLinkIcon } from "@/components/icons/Icons";
+import { ArrowRightIcon } from "@/components/icons/Icons";
 import { TechTag } from "@/components/ui/TechTag";
 import {
   getTier1Projects,
@@ -61,9 +61,6 @@ function FeaturedProjectCard({ project }: { project: Project }) {
 }
 
 function SupportingProjectCard({ project }: { project: Project }) {
-  const destination = project.github ?? project.live;
-  const action = project.github ? "View Source" : "Visit Site";
-
   return (
     <article className="flex min-w-0 flex-col border border-outline bg-surface p-[var(--spacing-stack-md)]">
       <div className="relative mb-4 aspect-video overflow-hidden border border-outline-variant bg-surface-container-low">
@@ -89,17 +86,13 @@ function SupportingProjectCard({ project }: { project: Project }) {
           <TechTag key={tag}>{tag}</TechTag>
         ))}
       </div>
-      {destination && (
-        <Link
-          href={destination}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto inline-flex w-fit items-center gap-1.5 font-label-md text-label-md text-primary hover:underline"
-        >
-          {action}
-          <ExternalLinkIcon className="size-4" />
-        </Link>
-      )}
+      <Link
+        href={`/projects/${project.slug}`}
+        className="mt-auto inline-flex w-fit items-center gap-1.5 font-label-md text-label-md text-primary hover:underline"
+      >
+        View Case Study
+        <ArrowRightIcon className="size-4" />
+      </Link>
     </article>
   );
 }

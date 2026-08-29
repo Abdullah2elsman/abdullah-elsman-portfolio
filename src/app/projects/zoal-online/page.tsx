@@ -11,9 +11,16 @@ export const metadata: Metadata = {
     canonical: "/projects/zoal-online",
   },
   openGraph: {
+    type: "article",
     title: "Zoal Online Case Study — Abdullah Elsman",
     description:
       "Practical production recovery across a Laravel application, PHP runtime, Composer dependencies, and server environment.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Zoal Online Case Study — Abdullah Elsman",
+    description:
+      "Laravel production recovery across PHP runtime compatibility, Composer dependencies, and server troubleshooting.",
   },
 };
 
