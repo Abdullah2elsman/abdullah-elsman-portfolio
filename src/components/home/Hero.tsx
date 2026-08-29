@@ -26,7 +26,7 @@ export function Hero() {
               {personal.eyebrow}
             </p>
             <p className="font-headline-md text-headline-md text-on-surface-variant">
-              {personal.name}
+              Hi, I&apos;m <span className="text-primary">{personal.name}</span>.
             </p>
             <h1
               id="hero-heading"
